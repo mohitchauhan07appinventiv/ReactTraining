@@ -1,0 +1,11 @@
+.homeContainer {
+  width: 100vh;
+  height: 100vh;
+  background-color: #ccc;
+}
+.h1tag {
+  color: red;
+}
+#h2tag {
+  color: blue;
+}
