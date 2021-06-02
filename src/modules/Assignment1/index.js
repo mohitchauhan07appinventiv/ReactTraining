@@ -1,11 +1,12 @@
 import React from "react";
 import "./index.css";
 import Banner from "./components/Banner";
-import Card from "./components/Lite";
+import Card from "./components/CardElement";
 
 class Assignment1 extends React.Component {
   render() {
     const card1={
+        containerClass:'cardContainer',
         headingText:"Lite",
         price:"Free",
         limit:'with restrictions',
@@ -20,7 +21,7 @@ class Assignment1 extends React.Component {
     }
     const card2={
         headingText:"Pro",
-              bgColor:"rgb(60,85,172)",
+              containerClass:'cardContainer pro',
               color:"white",
               price:"29$",
               limit:"monthly",
@@ -32,7 +33,7 @@ class Assignment1 extends React.Component {
                 "Facebook, Twitter, Instagram and Linkedin integration.",
                 "Achieved chat without limits.",
               ],
-              limarg:"0px 0px 22px 0px",
+              proliClass:"liStyle",
               btncolor:'black',
               bottomMarg:'64px 0px 20px 0px'
     }
@@ -49,7 +50,7 @@ class Assignment1 extends React.Component {
               <br /> your <span className={"freePlanText"}>Free Plan.</span>
             </h1>
             <Card
-              card1={card1}
+              card={card1}
             />
           </div>
           <div className={"proColumn"}>
@@ -58,7 +59,7 @@ class Assignment1 extends React.Component {
                 <p className='cotactUsLink'><a href='#'>Contact us</a></p>
             </div>
             <Card
-                card1={card2}
+                card={card2}
             />
           </div>
         </div>
