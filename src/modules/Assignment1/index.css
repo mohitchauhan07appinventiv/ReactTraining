@@ -15,13 +15,17 @@
 }
 .innerContainer > div {
   width: 31%;
-  background-color: blue;
+  /* background-color: blue; */
   height: 100%;
 }
 .saveYourMoneyColumn {
   padding: 40px 50px;
   border-radius: 20px;
-  background-image: linear-gradient(to bottom, rgb(84,92,184), rgb(84,92,184));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(84, 92, 184),
+    rgb(84, 92, 184)
+  );
   /* background-color: linear-gradient(to right, red, yellow); */
 }
 .saveYourMoneyColumn .bannerHeading {
@@ -46,7 +50,158 @@
 .saveYourMoneyColumn .bannerText.para2 {
   margin: 30px 5px 0px 0px;
 }
-.saveYourMoneyColumn .bannerImage{
-    margin: 83px 0px 0px 0px;
+.saveYourMoneyColumn .bannerImage {
+  margin: 83px 0px 0px 0px;
+}
+.liteColumn {
+  background-color: white;
+  padding: 5px 5px 35px 5px;
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.liteColumn .mainHeading {
+  font-size: 40px;
+  letter-spacing: 2.2px;
+  line-height: 1.05;
+  font-weight: normal;
+  margin: 0px 0px 50px 0px;
+}
+.liteColumn .mainHeading .freePlanText {
+  font-weight: bolder;
+  font-size: 44px;
+  letter-spacing: 0px;
+}
+.cardContainer {
+  background-color: rgb(242, 245, 251);
+  border-radius: 20px;
+  height: 100%;
+  padding: 40px 15px 10px 25px;
+  /* border: 1px solid black; */
+}
+.cardContainer .Heading {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.cardContainer .Heading .pricingSection {
+  margin: 10px 0px 0px 0px;
+}
+.pricingSection > h3 {
+  font-size: 30px;
+}
+.cardContainer .hl {
+  border-top: 4px solid rgb(61, 84, 171);
+  width: 22px;
+}
+.cardContainer .Heading h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: 0px;
+}
+.cardContainer .cardTitle {
+  margin: 37px 0px 0px 0px;
+}
+.cardContainer ul {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.cardContainer ul li {
+  list-style-type: none;
+  width: 92%;
+  display: flex;
+  margin: 0px 0px 30px 0px;
+  /* align-items: center; */
+  /* border: 1px solid black; */
+}
+#tick-mark {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  /* border: 1px solid black; */
+  margin: 0 27px 0px 0px;
 }
 
+#tick-mark::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 50%;
+  width: 3px;
+  background-color: #336699;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+#tick-mark::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 90%;
+  background-color: #336699;
+  content: "";
+  transform: translateX(10px) rotate(-45deg);
+  transform-origin: left bottom;
+}
+.bottomText {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin: 70px 0px 20px 0px;
+  text-decoration: none;
+}
+.startButton {
+  margin: 0px 0px 0px 35px;
+  width: 266px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(60, 85, 172);
+}
+.proColumn {
+  background-color: white;
+  padding: 5px 5px 35px 5px;
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.proColumn .mainHeading {
+  font-size: 40px;
+  letter-spacing: 2.2px;
+  line-height: 1.05;
+  font-weight: normal;
+  margin: 0px 0px 50px 0px;
+}
+.proColumn .mainHeading .freePlanText {
+  font-weight: bolder;
+  font-size: 44px;
+  letter-spacing: 0px;
+}
+.innertick{
+    height: 10px;
+    width: 15px;
+    border: 2px solid ;
+    border-color: transparent transparent black black;
+    transform: rotate(-45deg);
+    margin: 0px 20px 0px 5px;
+}
+.proColumn .contactUsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin:12px 0px 89px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.proColumn .contactUsContainer a{
+    text-decoration: none;
+}
