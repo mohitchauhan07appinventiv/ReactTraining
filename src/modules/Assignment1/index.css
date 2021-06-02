@@ -91,7 +91,7 @@
   font-size: 30px;
 }
 .cardContainer .hl {
-  border-top: 4px solid rgb(61, 84, 171);
+  border: 2px solid rgb(61, 84, 171);
   width: 22px;
 }
 .cardContainer .Heading h2 {
@@ -193,6 +193,9 @@
     border-color: transparent transparent black black;
     transform: rotate(-45deg);
     margin: 0px 20px 0px 5px;
+}
+.innertick.pro{
+  border-color: transparent transparent white white;
 }
 .proColumn .contactUsContainer{
     display: flex;

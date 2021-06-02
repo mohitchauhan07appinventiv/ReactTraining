@@ -5,6 +5,38 @@ import Card from "./components/Lite";
 
 class Assignment1 extends React.Component {
   render() {
+    const card1={
+        headingText:"Lite",
+        price:"Free",
+        limit:'with restrictions',
+        title:"All of Lite Plus:",
+        class:'innertick',
+        list:[
+            "Manage conversatons directly from your website",
+            "Bot without the AI service.",
+            "Achieved chat for 30 days.",
+            "Free, for always.",
+        ],
+    }
+    const card2={
+        headingText:"Pro",
+              bgColor:"rgb(60,85,172)",
+              color:"white",
+              price:"29$",
+              limit:"monthly",
+              title:"All of Lite Plus:",
+              class:'innertick pro',
+              list:[
+                "Bot with AI that can recognize the user's behaviour and can automatize the sentences.",
+                "Unlimited conversational flows.",
+                "Facebook, Twitter, Instagram and Linkedin integration.",
+                "Achieved chat without limits.",
+              ],
+              limarg:"0px 0px 22px 0px",
+              btncolor:'black',
+              bottomMarg:'64px 0px 20px 0px'
+    }
+    
     return (
       <div className={"mainContainer"}>
         <div className={"innerContainer"}>
@@ -17,16 +49,7 @@ class Assignment1 extends React.Component {
               <br /> your <span className={"freePlanText"}>Free Plan.</span>
             </h1>
             <Card
-              headingText={"Lite"}
-              price={"Free"}
-              limit={"with restrictions"}
-              title={"Plan includes:"}
-              list={[
-                "Manage conversatons directly from your website",
-                "Bot without the AI service.",
-                "Achieved chat for 30 days.",
-                "Free, for always.",
-              ]}
+              card1={card1}
             />
           </div>
           <div className={"proColumn"}>
@@ -35,21 +58,7 @@ class Assignment1 extends React.Component {
                 <p className='cotactUsLink'><a href='#'>Contact us</a></p>
             </div>
             <Card
-              headingText={"Pro"}
-              bgColor={"rgb(60,85,172)"}
-              color={"white"}
-              price={"29$"}
-              limit={"monthly"}
-              title={"All of Lite Plus:"}
-              list={[
-                "Bot with AI that can recognize the user's behaviour and can automatize the sentences.",
-                "Unlimited conversational flows.",
-                "Facebook, Twitter, Instagram and Linkedin integration.",
-                "Achieved chat without limits.",
-              ]}
-              limarg={"0px 0px 22px 0px"}
-              btncolor={'black'}
-              bottomMarg={'64px 0px 20px 0px'}
+                card1={card2}
             />
           </div>
         </div>
