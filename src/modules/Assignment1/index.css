@@ -1,0 +1,52 @@
+.mainContainer {
+  background-color: rgb(230, 235, 237);
+  width: 100%;
+  height: 100vh;
+  padding: 30px 250px 20px 250px;
+}
+.innerContainer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 60px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.innerContainer > div {
+  width: 31%;
+  background-color: blue;
+  height: 100%;
+}
+.saveYourMoneyColumn {
+  padding: 40px 50px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, rgb(84,92,184), rgb(84,92,184));
+  /* background-color: linear-gradient(to right, red, yellow); */
+}
+.saveYourMoneyColumn .bannerHeading {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  font-weight: 0;
+  line-height: 1.05;
+}
+.saveYourMoneyColumn .moneyNowText {
+  font-weight: bolder;
+  font-size: 44px;
+  letter-spacing: 1.5px;
+}
+.saveYourMoneyColumn .bannerText {
+  color: white;
+  font-size: 18px;
+}
+.saveYourMoneyColumn .bannerText.para1 {
+  margin: 35px 5px 0px 0px;
+}
+.saveYourMoneyColumn .bannerText.para2 {
+  margin: 30px 5px 0px 0px;
+}
+.saveYourMoneyColumn .bannerImage{
+    margin: 83px 0px 0px 0px;
+}
+
