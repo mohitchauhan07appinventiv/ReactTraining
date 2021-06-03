@@ -65,7 +65,7 @@ body {
   height: 150px;
   width: 100%;
   background-color: rgb(4, 196, 231);
-    padding: 30px 30px;
+  padding: 30px 30px;
 }
 #nextRow {
   background-color: rgb(4, 176, 210);
@@ -74,22 +74,21 @@ body {
   padding: 30px 30px;
 }
 
-.rowContainer .imageSection{
-    float: left;
-    margin-right: 40px;
+.rowContainer .imageSection {
+  float: left;
+  margin-right: 40px;
 }
-.rowContainer .imageSection > img{
-    height: 80px;
-    width: 90px;
-    
+.rowContainer .imageSection > img {
+  height: 80px;
+  width: 90px;
 }
-.rowContainer .contentSection > h2{
-    color: rgb(0, 33, 71);
+.rowContainer .contentSection > h2 {
+  color: rgb(0, 33, 71);
 }
-.rowContainer .contentSection > p{
-    color: rgba(0, 33, 71, 0.788);
+.rowContainer .contentSection > p {
+  color: rgba(0, 33, 71, 0.788);
 }
-#nextRowImageSection{
+#nextRowImageSection {
   float: right;
   margin-left: 30px;
 }
