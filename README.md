@@ -1,3 +1,8 @@
+Assignment 1 Output ->
+
+![Output Scren](https://user-images.githubusercontent.com/85174544/120492567-d0005600-c3d7-11eb-90b5-a9987c8bfb32.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
