@@ -5,6 +5,7 @@
 
 import React, { Component } from "react";
 import "./index.css";
+
 class Home extends Component {
   renderBox(title, buttonTitle){
     return(

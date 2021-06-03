@@ -3,32 +3,37 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: #ccc;
+  justify-content: center;
+  background-color: lightgray;
 }
-.itemContainer{
-  width: auto;
-  height: 100px;
-  height: 100px;
-  padding: 10px;
+
+.itemContainer {
+  width: 200px;
+  height: 120px;
   display: flex;
+  margin-bottom: 10px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   border: 1px solid red;
-  margin: 5px;
 }
-.itemContainer h3{
+
+.itemContainer h3 {
   color: #000;
   font-size: 22px;
   font-weight: bold;
 }
-.itemContainer button{
+
+.itemContainer button {
   width: auto;
   height: 30px;
+  cursor: pointer;
   padding: 0px 16px;
   border-radius: 15px;
-  background-color: lightblue;
-  cursor: pointer;
+  background-color: lightgreen;
+}
+
+.redClrTxt {
+  color: red !important;
 }

@@ -4,6 +4,8 @@ component ->
 --Day 2
 * There are 2 ways to crete a reusable component.
     1. if reusableility is in same file then create a function in same file and reuse.
-    2. if reusableility is in different files then create a new file
+    2. if reusableility is in different files then create a new file and reuse.
 
 Optional parameters will be passed in the last in the arguments
+
+all reusable 
