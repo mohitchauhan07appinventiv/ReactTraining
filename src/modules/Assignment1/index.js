@@ -54,9 +54,9 @@ class Assignment1 extends React.Component {
             />
           </div>
           <div className={"proColumn"}>
-            <div className='contactUsContainer'>
-                <p className='corporateText'>Are you a corporate?</p>
-                <p className='cotactUsLink'><a href='#'>Contact us</a></p>
+            <div className={'contactUsContainer'}>
+                <p className={'corporateText'}>{"Are you a corporate?"}</p>
+                <p className={'cotactUsLink'}><a href='#'>{"Contact us"}</a></p>
             </div>
             <Card
                 card={card2}
