@@ -1,0 +1,95 @@
+body {
+  width: 100%;
+  /* border: 2px solid black; */
+}
+.mainContainer {
+  margin: 0 auto;
+  width: 600px;
+  /* border: 1px solid blue; */
+}
+.headerContainer {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+.headerImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.floatingText {
+  position: absolute;
+  z-index: 2;
+  width: 280px;
+  height: 200px;
+  /* background-color: black; */
+  top: 60px;
+  left: 40px;
+}
+.floatingText .specialText {
+  color: rgb(38, 214, 238);
+  font-size: 35px;
+  font-weight: bolder;
+}
+.floatingText {
+  color: white;
+  font-size: 38px;
+  font-weight: lighter;
+}
+.footerContainer {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(7, 42, 93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.skype_logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.vl {
+  margin: 0px 10px;
+  height: 24px;
+  border-right: 2px solid white;
+}
+.email_logo {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.rowContainer {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(4, 196, 231);
+    padding: 30px 30px;
+}
+#nextRow {
+  background-color: rgb(4, 176, 210);
+  height: 150px;
+  width: 100%;
+  padding: 30px 30px;
+}
+
+.rowContainer .imageSection{
+    float: left;
+    margin-right: 40px;
+}
+.rowContainer .imageSection > img{
+    height: 80px;
+    width: 90px;
+    
+}
+.rowContainer .contentSection > h2{
+    color: rgb(0, 33, 71);
+}
+.rowContainer .contentSection > p{
+    color: rgba(0, 33, 71, 0.788);
+}
+#nextRowImageSection{
+  float: right;
+  margin-left: 30px;
+}
