@@ -2,6 +2,11 @@ Assignment 1 Output ->
 
 ![Output Scren](https://user-images.githubusercontent.com/85174544/120492567-d0005600-c3d7-11eb-90b5-a9987c8bfb32.png)
 
+Assignment 2 Output ->
+
+![assignment2](https://user-images.githubusercontent.com/85174544/120692522-8130ea00-c4c5-11eb-990d-496cbc21a2b5.png)
+
+
 
 # Getting Started with Create React App
 
