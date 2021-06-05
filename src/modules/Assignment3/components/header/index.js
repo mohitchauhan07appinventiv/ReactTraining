@@ -12,7 +12,7 @@ export default function Header() {
         <Logo src={images.logo} />
         {/* navbar */}
         <Navbar data={["BUY BITCOIN", "BLOG", "ABOUT US", "SELL BITCOIN"]} />
-        {/* Right Buttons */}
+        {/* Right Buttons section */}
         <div className={"login_signup_container"}>
           {/* change language section */}
           <Language />

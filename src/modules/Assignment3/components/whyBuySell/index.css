@@ -1,0 +1,34 @@
+.mainContainer .TitleSection{
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+.mainContainer .TitleSection img{
+ 
+    margin: 0 12px 0 0;
+    object-fit: contain;
+}
+.mainContainer .TitleSection h3{
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark-forest-green);
+}
+.mainContainer >p{
+    width: 576px;
+    height: 99px;
+    font-family: NunitoSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--blue-grey);
+}

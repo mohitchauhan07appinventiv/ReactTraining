@@ -45,16 +45,14 @@
 }
 @font-face {
   font-family: Rubik;
-  src: local(Rubik-Regular),
-    url(../../fonts/Rubik/static/Rubik-Regular.ttf);
+  src: local(Rubik-Regular), url(../../fonts/Rubik/static/Rubik-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
 }
 @font-face {
   font-family: Rubik;
-  src: local(Rubik-Bold),
-    url(../../fonts/Rubik/static/Rubik-Bold.ttf);
+  src: local(Rubik-Bold), url(../../fonts/Rubik/static/Rubik-Bold.ttf);
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -392,4 +390,271 @@ header {
 }
 .head_wrapper .login_signup_container .signup_container > button:hover {
   background-color: rgba(0, 156, 222, 0.2);
+}
+.cardSection {
+  width: 100%;
+  height: 482.4px;
+  /* border: 1px solid black; */
+  padding: 144px 236.4px 0px 237px;
+  display: flex;
+}
+.featuresSection {
+  position: absolute;
+  width: 1680px;
+  height: 1626.4px;
+  margin: 54.8px 0 46.4px;
+  background-image: linear-gradient(181deg, #f6fcff 10%, #ffffff 90%);
+  /* background-image: linear-gradient(#f6fcff, #ffffff); */
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+  z-index: 10;
+}
+.bitcoinBg img {
+  width: 349.5px;
+  height: 678.8px;
+  margin: 200px 0px 0px -120px;
+  position: absolute;
+  z-index: 20;
+}
+.featureBox {
+  position: relative;
+  width: 1680px;
+  border: 3px sold blue;
+  height: 500px;
+}
+/* .absolute {
+  position: absolute;
+} */
+.sell3Steps {
+  margin: 142px 0px 0px 0px;
+}
+.WhyBuySellSection {
+  position: absolute;
+  width: 1680px;
+  height: 590px;
+  z-index: 300;
+  margin: 720px 0px 0px 0px;
+  display: flex;
+}
+.WhyBuySellSection > img {
+  border-radius: 15px;
+}
+.WhyBuySellContent .headTitle {
+  width: 493px;
+  height: 97px;
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.WhyBuySellContent {
+  margin: 0 0 0 80px;
+}
+.WhyBuySellContent .WhyBuycomponentContainer1 {
+  margin: 40px 0px 0px 0px;
+}
+.WhyBuySellContent .WhyBuycomponentContainer2 {
+  margin: 30px 0 0 0;
+}
+.signUpFloater {
+  width: 580px;
+  height: 120px;
+  margin: 17px 224px 127px 0px;
+  padding: 28px 35px 27px 36px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.signUpFloater > h3 {
+  width: 306px;
+  height: 27px;
+  margin: 8px 3px 19px 0;
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.whatIsDogecoinSection {
+  position: relative;
+  margin: 1617px 0 0 0;
+  padding: 0 188px 0 189px;
+  /* border: 1px solid black; */
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.whatIsDogecoinSection .cardType {
+  width: 281px;
+  height: 315px;
+  border-radius: 10px;
+  /* padding: 79px 45px 73px 51px; */
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+}
+.whatIsDogecoinSection .cardType .cardTypeContainer {
+  display: flex;
+  margin: 33.9px 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.whatIsDogecoinSection .cardType .cardTypeContainer img {
+  margin-right: 10px;
+}
+.whatIsDogecoinSection .cardType .cardTypeContainer h3 {
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.whatIsDogecoinSection .mainSection {
+  width: 600px;
+  height: 315px;
+  border-radius: 10px;
+  padding: 32px 17px 27px 18px;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+}
+.whatIsDogecoinSection .mainSection h2 {
+  width: 364px;
+  height: 47px;
+  margin: 0 102px 20px 99px;
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.whatIsDogecoinSection .mainSection p {
+  width: 565px;
+  height: 185px;
+  /* margin: 24px 0 0; */
+  padding: 0px 24px 70px 23px;
+  font-family: NunitoSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+.whereCanSpend {
+  margin: -95px 0 0 0;
+}
+#WhereCanSpendTitle {
+  height: 100px;
+  width: 1680px;
+  text-align: center;
+  margin: 140px 140px 20px 0px;
+  position: absolute;
+  z-index: 50;
+
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dark-forest-green);
+}
+#WhereCanSpendText {
+  width: 1680px;
+  height: 63px;
+  text-align: center;
+  margin: 195px 140px 20px 0px;
+  padding: 0 420px 0 420px;
+  position: absolute;
+  z-index: 50;
+  /* border: 1px solid black; */
+  font-family: NunitoSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+.circularPhotoComponent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 346px 0 347px;
+  width: 1680px;
+  height: 400px;
+  /* background-color: black; */
+  margin: 422px 0 0 0;
+}
+#firstImgComp {
+  margin: 50px 0 0 0;
+}
+.IsDogeCoinForMeSection {
+  display: flex;
+  position: absolute;
+  margin: 784px 0 0 0;
+  z-index: 50;
+}
+.IsDogeCoinForMeSection > img{
+ margin: 0 89px 0 0;
+}
+.IsDogeCoinForMeSection .maincontent{
+  display: flex;
+  flex-direction: column;
+  margin: 68px 0 0 0;
+}
+.IsDogeCoinForMeSection .maincontent h2{
+
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  margin: 0 0 20px 0 ;
+  color: var(--dark-forest-green);
+}
+.IsDogeCoinForMeSection .maincontent p{
+  margin: 0 0 20px 0;
+  padding: 0 390px 0 0;
+  font-family: NunitoSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
 }

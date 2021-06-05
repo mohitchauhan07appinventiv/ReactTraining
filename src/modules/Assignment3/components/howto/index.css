@@ -1,0 +1,51 @@
+.howToContainer {
+  width: 1680px;
+
+  padding: 0px 232px 0px 230px;
+  position: absolute;
+  z-index: 30;
+  margin-top: 77.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.howToContainer h2 {
+  width: 420px;
+  height: 47px;
+  margin: 0 40px 19px 54px;
+  font-family: Rubik;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+.howToContainer p{
+    width: 186px;
+    height: 24px;
+    margin: 0 0 62.8px 0;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+   
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--dark-forest-green);
+}
+.howToContainer .threeFeatures{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.featuresButton{
+    margin-top: 36px;
+    margin-bottom: 108px;
+
+}
