@@ -1,11 +1,20 @@
 import React from 'react';
+import images from '../../utils/LoadImages';
 
-export default function ChangeLanguage(){
+export default function ChangeLanguage(props){
+    function changeLanguage(){
+        const selectElement = document.getElementById('change_language');
+        const flagImgEle = document.getElementById('flagImg');
+        var select = selectElement.selectedIndex;
+        if (select === 1) flagImgEle.setAttribute("src", images.flagIndia);
+        else if (select === 2) flagImgEle.setAttribute("src", images.flagRussia);
+        else flagImgEle.setAttribute("src", images.flagUsa);
+    }
     return(
         <div className={"change_language_container"}>
             <figure>
               <img
-                src={"assets/images/usa.svg"}
+                src={images.flagUsa}
                 alt={"usa flag"}
                 id={"flagImg"}
               />
@@ -14,7 +23,7 @@ export default function ChangeLanguage(){
             <select
               name={"change_language"}
               id={"change_language"}
-              onchange={"changeLanguage()"}
+              onChange={changeLanguage}
             >
               <option value={"english"}>{" ENG"}</option>
               <option value={"hindi"}>{"HIN"}</option>

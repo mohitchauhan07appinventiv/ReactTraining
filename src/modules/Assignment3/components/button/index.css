@@ -1,0 +1,29 @@
+.Btn{
+    width: 330px;
+    height: 65px;
+    /* padding: 22px 77px 21px; */
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.06;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.Btn.blue{
+    background-color: #009cde !important;
+}
+.Btn.green{
+    background-color: var(--dark-lime-green) !important;
+}
+.Btn.big{
+    width: 384px !important;
+}
+.Btn.small{
+    width: 200px !important;
+}

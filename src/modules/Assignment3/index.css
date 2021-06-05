@@ -1,195 +1,249 @@
 :root {
-    --blue-grey: #637696;
-    --squash: #e6b413;
-    --green-blue: #00b178;
-    --denim-blue-30: rgba(60, 90, 154, 0.3);
-    --scarlet: #d0021b;
-    --dark-lime-green: #86c306;
-    --cerulean: #009cde;
-    --nice-blue-7: rgba(23, 115, 166, 0.07);
-    --dark-grey-blue: #3a4e6f;
-    --cerulean-30: rgba(0, 156, 222, 0.3);
-    --cerulean-005:rgba(0, 156, 222, 0.05);
-    --golden-yellow: #f8c41c;
-  }
-  @font-face {
-    font-family: AkkuratPro;
-    src: local(AkkuratPro-Regular),
-      url(../../fonts/AkkuratPro/AkkuratPro-Regular.otf);
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  @font-face {
-    font-family: AkkuratPro;
-    src: local(AkkuratPro-Bold),
-      url(../../fonts/AkkuratPro/AkkuratPro-Bold.otf);
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  @font-face {
-    font-family: CircularStd;
-    src: local(CircularStd-Medium),
-      url(../../fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf);
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  @font-face {
-    font-family: CircularStd;
-    src: local(CircularStd-Bold),
-      url(../../fonts/Circular-Std-Font/Circular\ Std\ Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  .Text-Style {
-    font-family: CircularStd;
-    font-size: 48px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    color: #000000;
-  }
-  .Text-Style-2 {
-    font-family: CircularStd;
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.17;
-    letter-spacing: normal;
-    text-align: center;
-    color: var(--blue-grey);
-  }
-  .Text-Style-4 {
-    font-family: AkkuratPro;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.63;
-    letter-spacing: normal;
-    color: var(--cerulean);
-  }
-  .Text-Style-3 {
-    font-family: AkkuratPro;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
-    color: var(--squash);
-  }
+  --blue-grey: #637696;
+  --squash: #e6b413;
+  --green-blue: #00b178;
+  --denim-blue-30: rgba(60, 90, 154, 0.3);
+  --scarlet: #d0021b;
+  --dark-lime-green: #86c306;
+  --cerulean: #009cde;
+  --nice-blue-7: rgba(23, 115, 166, 0.07);
+  --dark-grey-blue: #3a4e6f;
+  --cerulean-30: rgba(0, 156, 222, 0.3);
+  --cerulean-005: rgba(0, 156, 222, 0.05);
+  --golden-yellow: #f8c41c;
+}
+@font-face {
+  font-family: AkkuratPro;
+  src: local(AkkuratPro-Regular),
+    url(../../fonts/AkkuratPro/AkkuratPro-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: AkkuratPro;
+  src: local(AkkuratPro-Bold), url(../../fonts/AkkuratPro/AkkuratPro-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: CircularStd;
+  src: local(CircularStd-Medium),
+    url(../../fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: CircularStd;
+  src: local(CircularStd-Bold),
+    url(../../fonts/Circular-Std-Font/Circular\ Std\ Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Rubik;
+  src: local(Rubik-Regular),
+    url(../../fonts/Rubik/static/Rubik-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Rubik;
+  src: local(Rubik-Bold),
+    url(../../fonts/Rubik/static/Rubik-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: NunitoSans;
+  src: local(NunitoSans-Regular),
+    url(../../fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
 /* --------------------------- CSS RESETTER ----------------------------------- */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
-    overflow-x: hidden;
+  line-height: 1;
+  overflow-x: hidden;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
-input,label{
-    cursor: text;
+input,
+label {
+  cursor: text;
 }
-select{
-    cursor: pointer;
+select {
+  cursor: pointer;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -198,18 +252,17 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 /* --------------------------- CSS RESETTER ----------------------------------- */
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.mainWrapper{
+.mainWrapper {
   width: 1680px;
   background-color: #ffffff;
   margin: 0 auto;
@@ -217,39 +270,37 @@ input[type=number] {
   flex-direction: column;
    */
 }
-header{
-    border: 1px solid rgb(255, 255, 255);
- width: 1680px;
-    /* position: relative; */
-    height: 350px;
-    background-image: linear-gradient(to bottom, #f6fcff, #ffffff 96%);
-    z-index: 1;
-    /* margin: 0 0 1004px; */
+header {
+  border: 1px solid rgb(255, 255, 255);
+  width: 1680px;
+  /* position: relative; */
+  height: 350px;
+  background-image: linear-gradient(to bottom, #f6fcff, #ffffff 96%);
+  z-index: 1;
+  /* margin: 0 0 1004px; */
 }
 
-.head_wrapper{
-    
-    padding: 30px 248px 42px 246px;
-    display: flex;
-    position: fixed;
-    z-index: 999;
-    /* border: 1px solid black; */
-    background-color: #f6fcff;
-
+.head_wrapper {
+  padding: 30px 232px 42px 230px;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  /* border: 1px solid black; */
+  background-color: #f6fcff;
 }
-.head_wrapper .company_logo{
-    margin-right: 81px;
+.head_wrapper .company_logo {
+  margin-right: 81px;
 }
-.head_wrapper .navbar{
-    margin-top: 10px;
-    margin-right: 197px;
-    height: 20px;   
-    /* border: 1px solid black;  */
+.head_wrapper .navbar {
+  margin-top: 10px;
+  margin-right: 197px;
+  height: 20px;
+  /* border: 1px solid black;  */
 }
-.head_wrapper .navbar ul li{
-    display: inline-block;
+.head_wrapper .navbar ul li {
+  display: inline-block;
 }
-.head_wrapper .navbar ul li a{
+.head_wrapper .navbar ul li a {
   text-decoration: none;
   width: 83px;
   height: 20px;
@@ -263,39 +314,38 @@ header{
   letter-spacing: 1px;
   color: var(--dark-grey-blue);
 }
-#about_us_link{
-    margin-right: 0;
+#about_us_link {
+  margin-right: 0;
 }
-.head_wrapper .login_signup_container{
-    display: flex;
-    height: 50px;
-    
-    /* border: 1px solid black; */
+.head_wrapper .login_signup_container {
+  display: flex;
+  height: 50px;
+
+  /* border: 1px solid black; */
 }
-.head_wrapper .login_signup_container select{
-    margin: 0 30px 0 0;
-    background-color: rgba(246, 252, 255, 0);
-    /* #f6fcff */
-    border: none;
-    outline: none;
-    cursor: pointer;
-   
+.head_wrapper .login_signup_container select {
+  margin: 0 30px 0 0;
+  background-color: rgba(246, 252, 255, 0);
+  /* #f6fcff */
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.head_wrapper .login_signup_container .change_language_container{
-    /* border: 1px solid black; */
-    display: flex;
-    width: 80px;
-    margin: 4px 30px 0px 0px;
-    height: 40px;
+.head_wrapper .login_signup_container .change_language_container {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 80px;
+  margin: 4px 30px 0px 0px;
+  height: 40px;
 }
 
-.head_wrapper .login_signup_container .change_language_container img{
-    height: 24px;
-    width: 24px;
-    border-radius: 20px;
-    margin: 7px 5px 5px 0px;
+.head_wrapper .login_signup_container .change_language_container img {
+  height: 24px;
+  width: 24px;
+  border-radius: 20px;
+  margin: 7px 5px 5px 0px;
 }
-.head_wrapper .login_signup_container .login_container > button{
+.head_wrapper .login_signup_container .login_container > button {
   width: 110px;
   height: 46px;
   margin: 0 20px 0 0;
@@ -314,10 +364,10 @@ header{
   color: var(--cerulean-30);
   cursor: pointer;
 }
-.head_wrapper .login_signup_container .login_container > button:hover{
-    background-color: #ffffff71;
+.head_wrapper .login_signup_container .login_container > button:hover {
+  background-color: #ffffff71;
 }
-.head_wrapper .login_signup_container .signup_container > button{
+.head_wrapper .login_signup_container .signup_container > button {
   width: 112px;
   height: 48px;
   margin: 0 0 0 20px;
@@ -327,9 +377,8 @@ header{
   border: none;
   background-color: rgba(0, 156, 222, 0.1);
   cursor: pointer;
-
 }
-.head_wrapper .login_signup_container .signup_container > button > span{
+.head_wrapper .login_signup_container .signup_container > button > span {
   width: 54px;
   height: 20px;
   font-family: AkkuratPro;
@@ -340,8 +389,7 @@ header{
   line-height: 1.67;
   letter-spacing: 1px;
   color: var(--cerulean);
-
 }
-.head_wrapper .login_signup_container .signup_container > button:hover{
-    background-color: rgba(0, 156, 222, 0.2);
+.head_wrapper .login_signup_container .signup_container > button:hover {
+  background-color: rgba(0, 156, 222, 0.2);
 }
