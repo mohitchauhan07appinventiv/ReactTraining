@@ -21,7 +21,12 @@ const tickBlack='images/assignment3/tickBlack.svg';
 const group1='images/assignment3/group1.png';
 const group2='images/assignment3/group2.png';
 const group3 = 'images/assignment3/group3.svg';
-const isDogeCoinForMeImg='images/assignment3/isDogeCoinForMeImg.png'
+const isDogeCoinForMeImg='images/assignment3/isDogeCoinForMeImg.png';
+const review = 'images/assignment3/review.png';
+const fb = 'images/assignment3/facebook.svg';
+const twitter = 'images/assignment3/twitter.svg';
+const flagSpanish = 'images/assignment3/esp.svg';
+const flagTurkish = 'images/assignment3/tur.svg';
 const images = {
   logo,
   flagIndia,
@@ -47,6 +52,11 @@ const images = {
   group2,
   group3,
   isDogeCoinForMeImg,
+  review,
+  fb,
+  twitter,
+  flagTurkish,
+  flagSpanish,
 
 };
 export default images;

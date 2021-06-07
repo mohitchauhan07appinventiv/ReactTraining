@@ -6,8 +6,8 @@ export default function ChangeLanguage(props){
         const selectElement = document.getElementById('change_language');
         const flagImgEle = document.getElementById('flagImg');
         var select = selectElement.selectedIndex;
-        if (select === 1) flagImgEle.setAttribute("src", images.flagIndia);
-        else if (select === 2) flagImgEle.setAttribute("src", images.flagRussia);
+        if (select === 1) flagImgEle.setAttribute("src", images.flagSpanish);
+        else if (select === 2) flagImgEle.setAttribute("src", images.flagTurkish);
         else flagImgEle.setAttribute("src", images.flagUsa);
     }
     return(
@@ -26,8 +26,8 @@ export default function ChangeLanguage(props){
               onChange={changeLanguage}
             >
               <option value={"english"}>{" ENG"}</option>
-              <option value={"hindi"}>{"HIN"}</option>
-              <option value={"russian"}>{"RUS"}</option>
+              <option value={"spannish"}>{"ESP"}</option>
+              <option value={"turkish"}>{"TUR"}</option>
             </select>
           </div>
     );

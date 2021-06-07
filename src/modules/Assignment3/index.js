@@ -8,13 +8,13 @@ import Card2 from "./components/card2";
 import HowTo from "./components/howto";
 import WhyBuySellContent from "./components/whyBuySell";
 import Button from "./components/button";
-import circularImg from "./components/circularImg";
 import CircularImg from "./components/circularImg";
+import Footer from './Footer'
 
 function Xcoin() {
   return (
     <div className={"mainWrapper"}>
-      <Header />
+      <Header logo={images.logo}/>
       <Banner
         data={{
           title: "Buy & Sell Dogecoin Online",
@@ -22,6 +22,8 @@ function Xcoin() {
           text1: "Instant, fun, and free from the traditional banking system.",
           text2: "Buy Dogecoin with your debit or credit card today.",
           title2: "Get Your crypto now!",
+          flag:images.flagUsa,
+          bitcoin:images.bitCoin
         }}
       />
       <div className={"cardSection"}>
@@ -39,7 +41,7 @@ function Xcoin() {
           id={"card2"}
           class={"commonCard blue large"}
           src={images.visaCard}
-          dots={"&bul;l&bull;&bull;&bull;"}
+          dots={"&bull;l&bull;&bull;&bull;"}
           bgcolor={"blue"}
           lastDigits={"8242"}
           holderName={"John Connor"}
@@ -115,7 +117,7 @@ function Xcoin() {
         <div className={"cardType"}>
           <img src={images.whatDoge1} alt={"icon"} />
           <div className="cardTypeContainer">
-            <img src={images.tickBlack}></img>
+            <img src={images.tickBlack} alt={'tickicon'}></img>
             <h3>{"Decentralized"}</h3>
           </div>
         </div>
@@ -130,7 +132,7 @@ function Xcoin() {
         <div className={"cardType second"}>
           <img src={images.whatDoge2} alt={"icon"} />
           <div className="cardTypeContainer">
-            <img src={images.tickBlack}></img>
+            <img src={images.tickBlack} alt={'tickBlack'}></img>
             <h3>{"Peer-To-peer"}</h3>
           </div>
         </div>
@@ -163,6 +165,7 @@ function Xcoin() {
             </div>
         </div>
       </div>
+      <Footer logo={images.logo} insta={images.fb} twitter={images.twitter} fb={images.fb} review={images.review} />
     </div>
   );
 }

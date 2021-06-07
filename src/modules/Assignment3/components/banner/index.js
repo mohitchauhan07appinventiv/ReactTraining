@@ -4,6 +4,14 @@ import Button from "../button";
 import images from "../../utils/LoadImages";
 
 export default function Banner(props) {
+  function changeCurrency(){
+    const selectElement = document.getElementById('currencySelect');
+    const flagImgEle = document.getElementById('currencyImage');
+    var select = selectElement.selectedIndex;
+    if (select === 1) flagImgEle.setAttribute("src", images.flagSpanish);
+    else if (select === 2) flagImgEle.setAttribute("src", images.bitCoin);
+    else flagImgEle.setAttribute("src", images.flagUsa);
+  }
   return (
     <div className={"bannerWrapper"}>
       <div className={"bannerContent"}>
@@ -19,12 +27,12 @@ export default function Banner(props) {
           <button id={"sellBtn"}>{"SELL"}</button>
         </div>
         <div className={"currencyInput"}>
-          <img src={images.flagUsa} alt={"usa flag"} />
+          <img src={images.flagUsa} id={'currencyImage'}alt={"usa flag"} />
           <input type={"number"} name={"currency"} placeholder={"100"} />
           <div className={"vl"}></div>
-          <select name={"currencySelect"} id={"currencSelect"}>
+          <select name={"currencySelect"} id={"currencySelect"} onChange={changeCurrency}>
             <option value={"usd"}>{"USD"}</option>
-            <option value={"inr"}>{"INR"}</option>
+            <option value={"spanish"}>{"ESP"}</option>
             <option value={"btc"}>{"BTC"}</option>
           </select>
         </div>
@@ -33,10 +41,9 @@ export default function Banner(props) {
           <img src={images.bitCoin} alt={"bitCoin Img"} />
           <input type={"number"} name={"currency"} placeholder={"0.10546074"} />
           <div className={"vl"}></div>
+          <img id={'bitcoinCovertImg'}src={images.bitCoin} alt={"bitCoin Img"} />
           <select name={"currencySelect"} id={"currencSelect"}>
-            <option value={"btc"}>{"BTC"}</option>
-            <option value={"inr"}>{"INR"}</option>
-            <option value={"usd"}>{"USD"}</option>
+            
           </select>
         </div>
         <div className={"getCryptoBtn"}>

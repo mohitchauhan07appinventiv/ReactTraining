@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
-import FeatureBox from "../../components/featureBox";
-import Button from "../../components/button";
+import FeatureBox from "../featureBox";
+import Button from "../button";
 
 export default function HowTo(props) {
   return (

@@ -3,13 +3,13 @@ import Language from "./ChangeLanguage";
 import Button from "./HeaderButton";
 import Navbar from "./Navbar";
 import Logo from './logo';
-import images from '../../utils/LoadImages';
-export default function Header() {
+
+export default function Header(props) {
   return (
     <header>
       <div className={"head_wrapper"}>
         {/* logo */}
-        <Logo src={images.logo} />
+        <Logo src={props.logo} />
         {/* navbar */}
         <Navbar data={["BUY BITCOIN", "BLOG", "ABOUT US", "SELL BITCOIN"]} />
         {/* Right Buttons section */}
