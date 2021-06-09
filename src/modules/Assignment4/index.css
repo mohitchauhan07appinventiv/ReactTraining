@@ -543,25 +543,25 @@ textarea {
   border-radius: 1px;
   background-color: var(--cerulean);
 }
-.headerContainer .logo > img {
+.headerContainer .logo  img {
   width: 90px;
   height: auto;
   margin: 0 57px 0 0;
   cursor: pointer;
 }
-.headerContainer .settings > img {
+.headerContainer .settings  img {
   width: 22px;
   height: auto;
   margin: 0 25px 0 0;
   cursor: pointer;
 }
-.headerContainer .notification > img {
+.headerContainer .notification  img {
   width: 24px;
   height: auto;
   margin: 0 21px 0 0;
   cursor: pointer;
 }
-.headerContainer .profilePic > img {
+.headerContainer .profilePic  img {
   width: 34px;
   height: auto;
   border-radius: 10px;
@@ -575,7 +575,7 @@ textarea {
 .side_container{
   display: none;
 }
-.supportTitle .side_container > button{
+.supportTitle .side_container  button{
   color: #ffffff;
   height: 40px;
   font-size: 14px;
@@ -589,14 +589,14 @@ textarea {
   margin: 0 0 0 40px;
 
 }
-.supportTitle .side_container > img{
+.supportTitle .side_container  img{
   width: 20px;
   height: 20px;
   margin: 1px 5px 0 0;
   background-color: #f0f0f0;
   border-radius: 20px;
 }
-.supportTitle .side_container > select{
+.supportTitle .side_container  select{
   border: none;
   outline: none;
   background-color: transparent;
@@ -623,19 +623,18 @@ textarea {
   box-shadow: 0 7px 15px 0 var(--nice-blue-7);
   background-color: #ffffff;
 }
-.searchBar > img {
+.searchBar img {
   height: 17px;
   width: 17px;
   margin: 0 18px 0 0;
 }
-.searchBar > input {
+.searchBar  input {
   border: none;
   outline: none;
 }
 .cardSection {
   display: flex;
   flex-direction: column;
-  
   margin: 0 15px 15px 0;
 }
 .cardContainer {
@@ -690,6 +689,105 @@ textarea {
   letter-spacing: normal;
   color: var(--dark-lime-green);
 }
+.contentSection{
+  display: flex;
+}
+.supportSection{
+  width: 100%;
+}
+.navBar{
+  width: 500px;
+  height: 100%;
+  position: sticky;
+  margin: 0 0 0 15px;
+  display: none;
+}
+.navBar  p{
+  padding: 12px 0 20px 0;
+  color: rgb(58, 78, 111, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.navBar  img{
+  height: 77px;
+  width: 150px;
+}
+.navBar ul li{
+  width: 130px;
+  margin: 0 0 30px 0;
+}
+.navBar ul li a{
+  text-decoration: none;
+
+  color: #3a4e6f;
+    height: 46px;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* background: rgb(0, 156, 222, 0.05); */
+    font-weight: bold;
+    line-height: 1.57;
+   
+}
+/* --------------------------------------------------- Grid CSS */
+.cardSectionGrid{
+  display: grid; 
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.cardContainerGrid{
+  width: 100%;
+  margin: auto;
+  height: 353px;
+  padding: 28px 41px 36px 40px;
+  border-radius: 20px;
+  box-shadow: 0 7px 15px 0 var(--nice-blue-7);
+  background-color: #ffffff;
+  display: grid;
+}
+.cardContainerGrid .cardTitle {
+  height: 36px;
+  margin: 0 0 21px 0;
+  font-family: CircularStd;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: var(--black);
+}
+.cardContainerGrid .cardData {
+  margin: 0px 0px 18px 0;
+  font-family: AkkuratPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: var(--cerulean);
+  /* ------------------------------- text overlow hidden ellipsis */
+  white-space: nowrap;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardContainerGrid a {
+  text-decoration: none;
+  margin-top: auto;
+
+  font-family: AkkuratPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: var(--dark-lime-green);
+}
 
 @media  only screen and (min-width:700px) {
   .side_container{
@@ -703,15 +801,25 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .cardSectionGrid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:1250px){
   .cardContainer{
     width: 30%;
-    margin-right: 20px;
   }
-  .cardSection{
-    flex-direction: row;
-    flex-wrap: wrap;
+  .headerContainer{
+    display: none;
+  }
+  .supportTitle{
+    margin: 25px 0 0 0;
+  }
+  .navBar{
+    display: block;
+  }
+  .cardSectionGrid{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

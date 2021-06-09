@@ -5,7 +5,7 @@ export default function Card(props) {
     return data.map((data) => <div className={"cardData"}>{data}</div>);
   }
   return (
-    <div className={"cardContainer"}>
+    <div className={props.class}>
       <h2 className={"cardTitle"}>{props.title}</h2>
       <div className={"demo"}>{ifAvailable(props.data)}</div>
       <a href={"#SeeAllArticles"}>{'See all articles'}</a>
