@@ -7,8 +7,8 @@ import FlexOrGrid from './FlexOrGrid';
 
 export default function support() {
   return <div className={"mainWrapper"}>
-    <FlexOrGrid type={'  flex'}/>
-    {/* <FlexOrGrid type={'Grid'}/> */}
+    {/* <FlexOrGrid type={'  flex'}/> */}
+    <FlexOrGrid type={'Grid'}/>
 
   </div>;
 }
