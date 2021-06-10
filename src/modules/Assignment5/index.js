@@ -7,15 +7,16 @@ import {
   TextField,
   Link,
   MobileStepper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
+  // Table,
+  // TableBody,
+  // TableCell,
+  // TableContainer,
+  // TableHead,
+  // TableRow,
+  Tooltip,
 } from "@material-ui/core";
 
+// import CustomTable from "./table";
 import useStyle from "./style";
 import {
   CheckCircleRounded,
@@ -46,6 +47,8 @@ import {
   Search,
   Add,
   VpnLock,
+  ChevronRightRounded,
+  ChevronLeftRounded,
 } from "@material-ui/icons/";
 
 export default function Assignment5(props) {
@@ -97,8 +100,6 @@ export default function Assignment5(props) {
       </div>
       {/* --------------------------------------------------- Header End */}
 
-      
-
       {/* --------------------------------------------------- Custon Drawer */}
       <Drawer
         className={classes.drawer}
@@ -109,18 +110,80 @@ export default function Assignment5(props) {
         anchor="left"
       >
         <div>
-          <AccountBox className={classes.drawerIcons} />
-          <GetAppRounded className={classes.drawerIcons} />
-          <PublishRounded className={classes.drawerIcons} />
-          <MonetizationOn className={classes.drawerIcons} />
-          <PlaylistAddRounded className={classes.drawerIcons} />
-          <FontDownloadSharp className={classes.drawerIcons} />
-          <FlightTakeoffRounded className={classes.drawerIcons} />
-          <QuestionAnswerRounded className={classes.drawerIcons} />
-          <CollectionsBookmarkRounded className={classes.drawerIcons} />
-          <DescriptionRounded className={classes.drawerIcons} />
-          <ErrorRounded className={classes.drawerIcons} />
-          <CopyrightRounded className={classes.drawerIcons} />
+          <Tooltip
+            className={classes.tooltip}
+            title={"Profile"}
+            placement="right"
+          >
+            <div>
+              <AccountBox className={classes.drawerIcons} />
+            </div>
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Download"}
+            placement="right"
+          >
+            <GetAppRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Upload"}
+            placement="right"
+          >
+            <PublishRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Dollar"}
+            placement="right"
+          >
+            <MonetizationOn className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip className={classes.tooltip} title={"List"} placement="right">
+            <PlaylistAddRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip className={classes.tooltip} title={"Font"} placement="right">
+            <FontDownloadSharp className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Plane Mode"}
+            placement="right"
+          >
+            <FlightTakeoffRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip className={classes.tooltip} title={"Chat"} placement="right">
+            <QuestionAnswerRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Important"}
+            placement="right"
+          >
+            <CollectionsBookmarkRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Files"}
+            placement="right"
+          >
+            <DescriptionRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Danger"}
+            placement="right"
+          >
+            <ErrorRounded className={classes.drawerIcons} />
+          </Tooltip>
+          <Tooltip
+            className={classes.tooltip}
+            title={"Copyright"}
+            placement="right"
+          >
+            <CopyrightRounded className={classes.drawerIcons} />
+          </Tooltip>
         </div>
       </Drawer>
       {/* --------------------------------------------------- Custon Drawer END*/}
@@ -143,7 +206,6 @@ export default function Assignment5(props) {
               <TextField
                 className={classes.amountInput}
                 id="outlined-basic"
-                label="Outlined"
                 variant="outlined"
                 label="Amount"
               />
@@ -227,32 +289,12 @@ export default function Assignment5(props) {
             </Button>
           </div>
         </div>
-        <Typography varient={'paragraph'} className={classes.buyMoneroTitle}>
-          {'Buy Monero online in India'}
+        <Typography varient={"paragraph"} className={classes.buyMoneroTitle}>
+          {"Buy Monero online in India"}
         </Typography>
-        <TableContainer className={classes.tableContainer} component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>{"Seller"}</TableCell>
-            <TableCell align="right">{"Payment Method"}</TableCell>
-            <TableCell align="right">{"Price/XMR"}</TableCell>
-            <TableCell align="right">{"Limits"}</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-            <TableRow>
-              <TableCell component="th" scope="row">
-                {'The'}
-              </TableCell>
-              <TableCell align="right">{"calories"}</TableCell>
-              <TableCell align="right">{"fat"}</TableCell>
-              <TableCell align="right">{"carbs"}</TableCell>
-            </TableRow>
-          
-        </TableBody>
-      </Table>
-    </TableContainer>
+
+      
+
         <div className={classes.TextContainer}>
           <div className={classes.paraPostAd}>
             <Typography variant={"h6"}>
@@ -279,7 +321,7 @@ export default function Assignment5(props) {
               </Typography>
             </Link>
           </div>
-          
+
           <div className={classes.showingAd}>
             <VpnLock className={classes.vpnLogo} />
             <Typography className={classes.showingAdText} variant={"subtitle1"}>
@@ -316,7 +358,7 @@ export default function Assignment5(props) {
               }
             </Typography>
           </div>
-        <div className={classes.hl}></div>
+          <div className={classes.hl}></div>
         </div>
         <div className={classes.stepperContainer}>
           <div className={classes.stepperContent}>
@@ -350,7 +392,7 @@ export default function Assignment5(props) {
                 // onClick={"handleNext"}
                 // disabled={activeStep === 5}
               >
-                Next
+                Next <ChevronRightRounded />
                 {/* {theme.direction === "rtl" ? (
                   <KeyboardArrowLeft />
                 ) : (
@@ -369,6 +411,7 @@ export default function Assignment5(props) {
                 ) : (
                   <KeyboardArrowLeft />
                 )} */}
+                <ChevronLeftRounded />
                 Back
               </Button>
             }

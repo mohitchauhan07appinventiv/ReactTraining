@@ -33,10 +33,16 @@ const useStyle = makeStyles(() => ({
     backgroundColor: "#388538",
     marginRight: "15px",
     color: "#fff",
+    '&:hover':{
+        backgroundColor:'#275d27',
+    }
   },
   logInBtn: {
     backgroundColor: "#1565c0",
     color: "#fff",
+    '&:hover':{
+        backgroundColor:'#0e4684'
+    },
   },
   drawer: {
     width: "50px",
@@ -102,6 +108,9 @@ const useStyle = makeStyles(() => ({
     color: "white",
     width: "49%",
     height: "50px",
+    '&:hover':{
+        backgroundColor:'#0e4684'
+    },
   },
   sellBtn: {
     color: "rgba(0,0,0,0.6)",
@@ -117,6 +126,9 @@ const useStyle = makeStyles(() => ({
     backgroundColor:'#1565c0',
     color:'white',
     marginBottom:'0',
+    '&:hover':{
+        backgroundColor:'#0e4684'
+    },
   },
   contentText:{
       fontSize:'38px',
@@ -128,6 +140,16 @@ const useStyle = makeStyles(() => ({
     margin:'auto',
     color: "#fff",
     height:'50px',
+    '&:hover':{
+        backgroundColor:'#275d27',
+    },
+    tooltip:{
+        fontSize: 16,
+      backgroundColor: "#1465C0",
+      color: "#fff",
+      padding: "12px",
+    },
+  
   },
 //   --------------------------------------------- Footer
   innerContainerLink: {
@@ -269,6 +291,7 @@ const useStyle = makeStyles(() => ({
     margin:'20px 0 0 0',
     fontWeight:'bold'
   },
+  
 }));
 
 export default useStyle;
