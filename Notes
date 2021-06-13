@@ -9,3 +9,19 @@ component ->
 Optional parameters will be passed in the last in the arguments
 
 all reusable 
+
+props flow is from pareent to child
+react fragment
+
+
+----------------------------------
+*Props immutable i.e not setState like method
+*state update using setState method in clas components only
+
+For Promise :- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+problem in setting state 
+https://codesandbox.io/s/react-new?file=/src/App.js
+
+using validation function and saperate error state
+https://codesandbox.io/s/new-state-object-for-errors-and-validation-function-emti5?file=/src/App.js
