@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import MovieCard from './components/MovieCard';
 import Data from './components/data';
 import useStyle from './style';
+import data from './generateData';
 
 const MoviePage = () => {
     const classes=useStyle();
@@ -13,7 +14,7 @@ const MoviePage = () => {
         Data[0].rating=rating;
     
     },2000);
-  
+    console.log(data.src + '<- I am here');
     return (
         <div className={classes.movieCardWrapper}>
         {

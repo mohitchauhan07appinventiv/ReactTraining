@@ -143,3 +143,17 @@ const SignUpForm = (props) => {
 };
 
 export default SignUpForm;
+/**
+ * - Used Material UI, Material Styling, Material-Icons
+ * - Used functional Components
+ * - Used states and functions to show error on input field on wrong input in signup Button
+ * - Used controlled input using handleChange
+ * - Used Browser Storage to Store the usename, email , and password
+ * - Validation on Login from Browser Stored Values of email and password
+ * - if email and password matches with the browser stored values then only it will move to movie section
+ * - Used state and callbacks to implement conditional rendering of the three components ie. LoginPage, SignUpPage, MoviePage.
+ * - Implemented multiple components files like resulable components in component folder
+ * - used flex wrap property in movie section to wrap the cards on small screen sizes
+ * - Outputs/Screenshots are uploaded on git hub's reading section under assignment - 6
+ * - 
+ */
