@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Paper,
   Table,
@@ -11,13 +11,28 @@ import {
 } from "@material-ui/core";
 import { Edit, DeleteForever} from "@material-ui/icons";
 import useStyle from "./style";
+import Loader from './Loader';
 
 const DisplayTable = ({data,columns, handleEdit, handleDelete}) => {
     const classes=useStyle();
+    const [isLoading, setIsLoading]=useState(true);
+    useEffect(()=>{
+      setTimeout(()=>{
+        setIsLoading(false);
+      },1000)
+    },[])
+
+    useEffect(()=>{
+      return setIsLoading(true)
+    },[])
+    
   return (
     <div className={classes.cardContainer}>
       <Paper className={classes.tablePaper}>
-        <TableContainer className={classes.container}>
+        {isLoading ?
+        (<Loader/>)
+        :(
+          <TableContainer className={classes.container}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
               <TableRow>
@@ -76,6 +91,7 @@ const DisplayTable = ({data,columns, handleEdit, handleDelete}) => {
             </TableBody>
           </Table>
         </TableContainer>
+        )}
       </Paper>
     </div>
   );

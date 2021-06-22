@@ -82,11 +82,25 @@ const useStyle = makeStyles({
   deleteBtn:{
    height:'60px',
    borderRadius:'50px',
-   margin:'0 0 20px 0'
+   margin:'0 0 20px 0',
+   width:'300px'
   },
   errorMessage:{
     color:'red'
 
+  },
+  cancellBtn:{
+    fontSize:"18px",
+    textDecoration:'none',
+    cursor:'pointer',
+    float:'right',
+    margin:'10px 30px 0 0',
+    padding:'4px 0 0 0',
+    backgroundColor:'red',
+    height:'30px',
+    width:'30px',
+    borderRadius:'20px',
+    color:'white'
   },
 });
 export default useStyle;

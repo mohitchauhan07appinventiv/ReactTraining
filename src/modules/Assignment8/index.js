@@ -94,7 +94,7 @@ const Assignment8 = () => {
         curr.empLname === obj.empLname
       );
     });
-    console.log(data)
+
     data.splice(findIndexInData,1);
     setData(data);
   }
