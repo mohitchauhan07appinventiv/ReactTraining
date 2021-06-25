@@ -94,10 +94,10 @@ const useStyle = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    margin:'0px 0 50px 0',
+    margin:'0px 0 10px 0',
   },
   productContainer:{
-    maxHeight:'1200px',
+    // maxHeight:'1200px',
     minHeight:'600px',
     width:'90%',
     backgroundColor: "white",
@@ -114,6 +114,7 @@ const useStyle = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     flexWrap:'wrap',
+    margin:'10px 0 0 0'
   },
   smallProductContainer:{
     width:'26.5%',
@@ -128,7 +129,7 @@ const useStyle = makeStyles({
     margin:'0 0 20px 0',
   },
   smallPrdImg:{
-    height:'93%',
+    height:'70%',
     width:'100%',
     borderRadius:'20px',
   },
@@ -171,6 +172,8 @@ const useStyle = makeStyles({
     textAlign:'center',
     fontSize:'22px',
     fontWeight:'bold',
+    textDecoration:'none',
+    margin:'10px 0 0 0',
   }
 });
 export default useStyle;

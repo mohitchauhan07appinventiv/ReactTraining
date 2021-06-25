@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from './modules/Assignment12/store/store';
 // import Home from "./modules/home"
 // import Assign1 from "./modules/Assignment1";
 // import Assign2 from './modules/Assignment2';
@@ -10,15 +12,19 @@ import { BrowserRouter } from "react-router-dom";
 // import Assign7_1 from "./modules/Assignment7/FirstTry";
 // import Assign7 from './modules/Assignment7/FinalWork';
 // import Assign8 from './modules/Assignment8';
-import Assign9 from './modules/Assignment9';
+// import Assign9 from './modules/Assignment9';
+// import Assign11 from './modules/Assignment11';
+import Assign12 from './modules/Assignment12';
 
 class App extends React.Component {
   render() {
     return (
       <>
+      <Provider store ={store}>
         <BrowserRouter>
-          <Assign9 />
+          <Assign12 />
         </BrowserRouter>
+      </Provider>
       </>
     );
   }

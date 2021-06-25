@@ -45,8 +45,8 @@ const obj = [
   {
     id: "5",
     title: "Justice League",
-    // img: "https://www.themoviesmind.in/wp-content/uploads/2021/03/zack-snyders-poster-1.jpg",
-    img: "images/assignment9/justiceLeague.jpg",
+    img: "https://www.themoviesmind.in/wp-content/uploads/2021/03/zack-snyders-poster-1.jpg",
+    // img: "images/assignment9/justiceLeague.jpg",
     rating: "8.1 / 10",
     desc: "Bruce Wayne and Diana Prince try to bring the metahumans of Earth together after the death of Clark Kent. Meanwhile, Darkseid sends Steppenwolf to Earth with a vast army to subjugate humans.",
   },

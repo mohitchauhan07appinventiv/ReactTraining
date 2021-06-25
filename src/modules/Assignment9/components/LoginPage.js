@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useStyle from "./style";
 import Forms from "./Forms";
 import Button from "./Button";
 import { useHistory } from "react-router-dom";
+import axios from 'axios';
 
 const LoginPage = () => {
   const classes = useStyle();
@@ -12,6 +13,30 @@ const LoginPage = () => {
     email: "",
     password: "",
   });
+  let error = false;
+  
+
+// API Stored Email And password for verification
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "cityslicka"
+// }
+
+
+  const apiCall = async () => {
+    try{
+      const res = await axios.post("https://reqres.in/api/login",{
+        email:values.email,
+        password:values.password
+      });
+      error=false;
+      return res.data.token;
+
+    }catch (e){
+      // console.log(e);
+      error = true;
+    }   
+  };
 
 
   const handleChange = (e) => {
@@ -22,13 +47,22 @@ const LoginPage = () => {
     });
   };
 
-  const handleOnclick = () => {
+  const handleOnclick = async() => {
+
     if (localStorage.getItem("access_token") == null) {
-      localStorage.setItem("access_token", "aabababba-aszzz--zdfsdf");
+      const credentials =  await apiCall();
+      if(credentials){
+        localStorage.setItem("access_token", credentials);
+      }
     }
-    localStorage.setItem('credentials',JSON.stringify(values));
-    //----------------------------------------------------------------Redirect to Dashboard
-    history.push("/dashboard");
+    console.log(error)
+    if(!error){
+      localStorage.setItem('credentials',JSON.stringify(values));
+      //----------------------------------------------------------------Redirect to Dashboard
+      history.push("/dashboard");
+    }else{
+      alert('invalid credentials, Try Again')
+    }
   };
 
   return (
